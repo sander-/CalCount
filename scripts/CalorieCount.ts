@@ -20,9 +20,9 @@ class CalorieCount
     constructor()
     {
         document.getElementById("calculate").onclick = ()=> {
-            var weight = document.getElementById("weight").nodeValue;
-            var gender = document.getElementById("gender").nodeValue;
-            var runkm = document.getElementById("runkm").nodeValue;
+            var weight = (<HTMLInputElement>document.getElementById("weight")).value;
+            var gender = (<HTMLInputElement>document.querySelector('input[name="gender"]:checked')).value;
+            var runkm = (<HTMLInputElement>document.getElementById("runkm")).value;
             this.Calculate(parseFloat(weight), parseFloat(gender), parseFloat(runkm));
 
             document.getElementById("result").innerHTML = this.RunningNumber.toString();

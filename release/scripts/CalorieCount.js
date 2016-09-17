@@ -2,9 +2,9 @@ var CalorieCount = (function () {
     function CalorieCount() {
         var _this = this;
         document.getElementById("calculate").onclick = function () {
-            var weight = document.getElementById("weight").nodeValue;
-            var gender = document.getElementById("gender").nodeValue;
-            var runkm = document.getElementById("runkm").nodeValue;
+            var weight = document.getElementById("weight").value;
+            var gender = document.querySelector('input[name="gender"]:checked').value;
+            var runkm = document.getElementById("runkm").value;
             _this.Calculate(parseFloat(weight), parseFloat(gender), parseFloat(runkm));
             document.getElementById("result").innerHTML = _this.RunningNumber.toString();
         };
