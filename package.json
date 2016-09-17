@@ -1,0 +1,29 @@
+{
+  "name": "calcount",
+  "version": "1.0.0",
+  "description": "Calorie Count",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^1.8.10"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sander-/calcount.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "Sander-",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sander-/calcount/issues"
+  },
+  "homepage": "https://github.com/sander-/calcount#readme"
+}
